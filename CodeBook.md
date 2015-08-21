@@ -7,7 +7,7 @@ output: html_document
 
 This is the Code Book for the Course Project of the Getting and Cleaning Data Coursera Course.  The paragraph below is copied from the Coursera Course Project by way of introduction:
 
-#Project Intro from Coursera:
+Project Intro from Coursera:
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -17,7 +17,7 @@ Here are the data for the project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 
-#Important information is provided about the data in the link above.  The key paragraphs from the above website are copied here for quick reference:
+Important information is provided about the data in the link above.  The key paragraphs from the above website are copied here for quick reference:
 
 Data Set Information:
 
@@ -65,7 +65,8 @@ mean(measures):  The mean (or average) of each of the 66 variables was taken for
 
 The length of the dataset is 30 subjects x 6 activities x 66 variable measurements= 11,880 rows.  
 
-## To read the data into R, use the following code, assuming the tidy_output.txt file is in the R home ## directory.
+To read the data into R, use the following code, assuming the tidy_output.txt file is in the R home  directory.
+
 tidy <-read.table(file="tidy_output.txt",header=TRUE, sep=" ")
 
 This is a tidy data set with each variable in one column, and each different observation of that variable in a different row.  Note that it is the long form of the tidy data set.
